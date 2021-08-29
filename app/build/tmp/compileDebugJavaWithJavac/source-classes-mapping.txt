@@ -1,0 +1,6 @@
+com/example/galleryphotos/BuildConfig.java
+ com.example.galleryphotos.BuildConfig
+com/example/galleryphotos/MainActivity.java
+ com.example.galleryphotos.MainActivity
+ com.example.galleryphotos.MainActivity$1
+ com.example.galleryphotos.MainActivity$2
