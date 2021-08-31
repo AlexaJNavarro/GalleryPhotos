@@ -1,4 +1,4 @@
-#Mon Aug 30 21:30:48 PET 2021
-base.0=/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Mon Aug 30 22:19:10 PET 2021
+base.0=/home/leo/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

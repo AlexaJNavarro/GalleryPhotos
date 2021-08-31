@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
         dialog.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
 
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 requestPermissions(new String[]{WRITE_EXTERNAL_STORAGE, CAMERA},100);
@@ -189,5 +190,13 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
+        else {
+            Toast.makeText(MainActivity.this, Environment.getExternalStorageDirectory().toString(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void BtnLocation(View view) {
+        Intent i = new Intent(this, Location.class);
+        startActivity(i);
     }
 }

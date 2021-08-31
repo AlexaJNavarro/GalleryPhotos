@@ -22,6 +22,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.GalleryPhotos" >
+        <activity android:name="com.example.galleryphotos.Location" />
         <activity android:name="com.example.galleryphotos.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,8 +38,7 @@
             android:grantUriPermissions="true" >
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_path" >
-            </meta-data>
+                android:resource="@xml/provider_path" />
         </provider>
     </application>
 
