@@ -6,72 +6,149 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml
+8-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml
+9-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:5:5-80
-11-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:5:22-77
-12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:6:5-81
-12-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:6:22-78
-13    <uses-permission android:name="android.permission.CAMERA" />
-13-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:7:5-65
-13-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:7:22-62
-14
-15    <application
-15-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:9:5-34:19
-16        android:allowBackup="true"
-16-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:10:9-35
-17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.5.0] /home/leo/.gradle/caches/transforms-2/files-2.1/cc5e9dcdc56dc39042f72c501235e83f/core-1.5.0/AndroidManifest.xml:24:18-86
-18        android:debuggable="true"
-19        android:icon="@mipmap/ic_launcher"
-19-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:11:9-43
-20        android:label="@string/app_name"
-20-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:12:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:13:9-54
-22        android:supportsRtl="true"
-22-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:14:9-35
-23        android:testOnly="true"
-24        android:theme="@style/Theme.GalleryPhotos" >
-24-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:15:9-51
-25        <activity android:name="com.example.galleryphotos.Location" />
-25-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:16:9-55
-25-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:16:19-43
-26        <activity android:name="com.example.galleryphotos.MainActivity" >
-26-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:17:9-23:20
-26-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:17:19-47
-27            <intent-filter>
-27-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:18:13-22:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:19:17-69
-28-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:19:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:21:17-77
-30-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:21:27-74
-31            </intent-filter>
-32        </activity>
-33
-34        <provider
-35            android:name="androidx.core.content.FileProvider"
-35-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:26:13-62
-36            android:authorities="com.example.galleryphotos.provider"
-36-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:27:13-60
-37            android:exported="false"
-37-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:28:13-37
-38            android:grantUriPermissions="true" >
-38-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:29:13-47
-39            <meta-data
-39-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:30:13-32:67
-40                android:name="android.support.FILE_PROVIDER_PATHS"
-40-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:31:17-67
-41                android:resource="@xml/provider_path" />
-41-->/home/leo/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:32:17-54
-42        </provider>
-43    </application>
-44
-45</manifest>
+11    <!--
+12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+13         Google Maps Android API v2, but you must specify either coarse or fine
+14         location permissions for the "MyLocation" functionality.
+15    -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:10:5-79
+16-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:11:5-80
+17-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:11:22-77
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:12:5-81
+18-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:13:5-65
+19-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:13:22-62
+20
+21    <!-- Include required permissions for Google Maps API to run. -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:23:5-79
+22-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:23:22-76
+23    <uses-permission android:name="android.permission.INTERNET" />
+23-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:24:5-67
+23-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:24:22-64
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:27:9-41
+27        android:required="true" />
+27-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:28:9-32
+28
+29    <queries>
+29-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:30:5-34:15
+30
+31        <!-- Needs to be explicitly declared on Android R+ -->
+32        <package android:name="com.google.android.apps.maps" />
+32-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:33:9-64
+32-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:33:18-61
+33    </queries>
+34
+35    <application
+35-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:15:5-56:19
+36        android:allowBackup="true"
+36-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:16:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.5.0] /home/alexa/.gradle/caches/transforms-2/files-2.1/cc5e9dcdc56dc39042f72c501235e83f/core-1.5.0/AndroidManifest.xml:24:18-86
+38        android:debuggable="true"
+39        android:icon="@mipmap/ic_launcher"
+39-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:17:9-43
+40        android:label="@string/app_name"
+40-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:18:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:19:9-54
+42        android:supportsRtl="true"
+42-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:20:9-35
+43        android:testOnly="true"
+44        android:theme="@style/Theme.GalleryPhotos" >
+44-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:21:9-51
+45
+46        <!--
+47             The API key for Google Maps-based APIs is defined as a string resource.
+48             (See the file "res/values/google_maps_api.xml").
+49             Note that the API key is linked to the encryption key used to sign the APK.
+50             You need a different API key for each encryption key, including the release key that is used to
+51             sign the APK for publishing.
+52             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+53        -->
+54        <meta-data
+54-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:31:9-33:55
+55            android:name="com.google.android.geo.API_KEY"
+55-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:32:13-58
+56            android:value="@string/google_maps_key" />
+56-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:33:13-52
+57
+58        <activity
+58-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:35:9-37:74
+59            android:name="com.example.galleryphotos.Navigation"
+59-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:36:13-39
+60            android:label="@string/title_activity_navigation" />
+60-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:37:13-62
+61        <activity android:name="com.example.galleryphotos.MapsActivity" />
+61-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:38:9-50
+61-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:38:19-47
+62        <activity android:name="com.example.galleryphotos.MainActivity" >
+62-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:39:9-45:20
+62-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:39:19-47
+63            <intent-filter>
+63-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:40:13-44:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:41:17-69
+64-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:41:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:43:17-77
+66-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:43:27-74
+67            </intent-filter>
+68        </activity>
+69
+70        <provider
+71            android:name="androidx.core.content.FileProvider"
+71-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:48:13-62
+72            android:authorities="com.example.galleryphotos.provider"
+72-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:49:13-60
+73            android:exported="false"
+73-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:50:13-37
+74            android:grantUriPermissions="true" >
+74-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:51:13-47
+75            <meta-data
+75-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:52:13-54:57
+76                android:name="android.support.FILE_PROVIDER_PATHS"
+76-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:53:17-67
+77                android:resource="@xml/provider_path" />
+77-->/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/AndroidManifest.xml:54:17-54
+78        </provider>
+79        <!-- Needs to be explicitly declared on P+ -->
+80        <uses-library
+80-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:39:9-41:40
+81            android:name="org.apache.http.legacy"
+81-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:40:13-50
+82            android:required="false" />
+82-->[com.google.android.gms:play-services-maps:17.0.1] /home/alexa/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:41:13-37
+83
+84        <activity
+84-->[com.google.android.gms:play-services-base:17.0.0] /home/alexa/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+85            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+85-->[com.google.android.gms:play-services-base:17.0.0] /home/alexa/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+86            android:exported="false"
+86-->[com.google.android.gms:play-services-base:17.0.0] /home/alexa/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+87            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+87-->[com.google.android.gms:play-services-base:17.0.0] /home/alexa/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+88
+89        <meta-data
+89-->[com.google.android.gms:play-services-basement:17.0.0] /home/alexa/.gradle/caches/transforms-2/files-2.1/3bd47cd0cbc033840efb0f55a32df796/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+90            android:name="com.google.android.gms.version"
+90-->[com.google.android.gms:play-services-basement:17.0.0] /home/alexa/.gradle/caches/transforms-2/files-2.1/3bd47cd0cbc033840efb0f55a32df796/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+91            android:value="@integer/google_play_services_version" />
+91-->[com.google.android.gms:play-services-basement:17.0.0] /home/alexa/.gradle/caches/transforms-2/files-2.1/3bd47cd0cbc033840efb0f55a32df796/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+92    </application>
+93
+94</manifest>

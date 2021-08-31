@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GalleryPhotos</string>
+    <string name="title_activity_navigation">Map</string>
 </resources>

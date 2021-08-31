@@ -13,7 +13,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="376dp"
+        android:layout_height="480dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -25,6 +25,14 @@
             app:srcCompat="@drawable/image_no_disp"
 
             />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Descripción" />
     </LinearLayout>
 
         <LinearLayout
@@ -34,6 +42,8 @@
             android:gravity="center"
             android:layout_marginBottom="40dp"
             >
+
+
 
             <Button
                 android:id="@+id/btn_select"
@@ -48,15 +58,19 @@
 
             <Button
                 android:id="@+id/btn_location"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="281dp"
+                android:layout_height="47dp"
                 android:onClick="BtnLocation"
-                android:text="Button" />
+                android:text="Continuar"
+                android:background="@drawable/botton_select"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/second" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"></LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

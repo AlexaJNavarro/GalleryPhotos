@@ -1,12 +1,5 @@
 package com.example.galleryphotos;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.FileProvider;
-
-import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -25,10 +18,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.io.File;
-import java.net.URI;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 
-import javax.xml.transform.Result;
+import java.io.File;
 
 import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
@@ -104,14 +99,8 @@ public class MainActivity extends AppCompatActivity {
             if(grantResults.length == 2 && grantResults[0] == PackageManager.PERMISSION_GRANTED
                && grantResults[1] == PackageManager.PERMISSION_GRANTED){
                 btnSelect.setEnabled(true);
-            }else{
-                requestManualPermissions();
             }
         }
-    }
-
-    private void requestManualPermissions() {
-
     }
 
     public void BtnSelected(View view) {
@@ -196,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void BtnLocation(View view) {
-        Intent i = new Intent(this, Location.class);
+        Intent i = new Intent(this, MapsActivity.class);
         startActivity(i);
     }
 }
