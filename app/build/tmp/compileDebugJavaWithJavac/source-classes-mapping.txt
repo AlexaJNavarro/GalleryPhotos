@@ -4,3 +4,4 @@ com/example/galleryphotos/MainActivity.java
  com.example.galleryphotos.MainActivity
  com.example.galleryphotos.MainActivity$1
  com.example.galleryphotos.MainActivity$2
+ com.example.galleryphotos.MainActivity$3
