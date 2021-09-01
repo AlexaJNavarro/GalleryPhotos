@@ -25,7 +25,16 @@ public class Ubication {
         Ubication.lon = lon;
     }
 
+    public static String getRegion() {
+        return Region;
+    }
+
+    public static void setRegion(String region) {
+        Region = region;
+    }
+
     public static String Adreess;
+    public static String Region;
     public static  Float lat;
     public static  Float lon;
 }

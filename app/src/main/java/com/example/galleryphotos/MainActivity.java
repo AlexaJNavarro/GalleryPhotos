@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
@@ -15,6 +16,7 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -23,14 +25,17 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
+import com.example.galleryphotos.AHelper.Image;
+
 import java.io.File;
+import java.net.URI;
 
 import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView image;
+        ImageView image;
     private final String file = "myImagesTest/";
     private final String route_image = file + "myPictures";
     String path = "";
@@ -53,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
             }else{
                 btnSelect.setEnabled(false);
         }
-
     }
 
     private boolean validate_permissions() {
@@ -164,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
                 case code_selected:
                     Uri upload_path = data.getData();
                     image.setImageURI(upload_path);
+                    Toast.makeText(MainActivity.this, upload_path.toString(), Toast.LENGTH_SHORT).show();
                     break;
                 case code_take:
                     MediaScannerConnection.scanFile(this, new String[]{path}, null,
@@ -185,7 +190,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void BtnLocation(View view) {
+        EditText txt_description = findViewById(R.id.txt_description);
+        Image.Description = txt_description.getText().toString();
         Intent i = new Intent(this, MapsActivity.class);
+        startActivity(i);
+    }
+
+    public void BtnRedirectGallery(View view) {
+        Intent i = new Intent(this, Gallery.class);
         startActivity(i);
     }
 }

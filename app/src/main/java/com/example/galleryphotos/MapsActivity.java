@@ -40,7 +40,7 @@ public class MapsActivity extends FragmentActivity {
     }
 
     public void apiPlaces() {
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.1.8:8081/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.1.6:8081/")
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
         LocationNameApi locationNameApi = retrofit.create(LocationNameApi.class);

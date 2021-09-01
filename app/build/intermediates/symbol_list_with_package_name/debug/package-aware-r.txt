@@ -1993,8 +1993,10 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btn_cor
+id btn_cor_image
 id btn_location
 id btn_select
+id button
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2067,7 +2069,6 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editTextTextPersonName
 id edit_query
 id elastic
 id end
@@ -2086,6 +2087,8 @@ id fitToContents
 id fixed
 id flip
 id floating
+id floatingActionButton
+id floatingActionButton2
 id forever
 id fragment_container_view_tag
 id frost
@@ -2126,9 +2129,13 @@ id jumpToStart
 id labeled
 id layout
 id lbl_direction
+id lbl_direction_image
 id lbl_lat
+id lbl_lat_image
 id lbl_log
+id lbl_log_image
 id lbl_region
+id lbl_region_image
 id left
 id leftToRight
 id legacy
@@ -2138,6 +2145,7 @@ id line3
 id linear
 id linearLayout
 id listDirections
+id listImages
 id listMode
 id list_item
 id map
@@ -2357,6 +2365,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txt_description
 id unchecked
 id uniform
 id unlabeled
@@ -2448,6 +2457,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_gallery
 layout activity_location
 layout activity_main
 layout activity_navigation
@@ -2468,6 +2478,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout list_item_direction
+layout list_item_images
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

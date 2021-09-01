@@ -17,6 +17,14 @@
         android:gravity="center"
         android:orientation="vertical">
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="BtnRedirectGallery"
+            app:srcCompat="@drawable/botton_select" />
+
         <ImageView
             android:id="@+id/id_image"
             android:layout_width="221dp"
@@ -27,12 +35,13 @@
             />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/txt_description"
             android:layout_width="221dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Descripción" />
+
     </LinearLayout>
 
         <LinearLayout

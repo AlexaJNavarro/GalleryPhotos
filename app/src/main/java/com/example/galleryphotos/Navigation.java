@@ -1,11 +1,19 @@
 package com.example.galleryphotos;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.os.Environment;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.fragment.app.FragmentActivity;
 
+import com.example.galleryphotos.AHelper.Func;
+import com.example.galleryphotos.AHelper.Image;
 import com.example.galleryphotos.AHelper.Ubication;
+import com.example.galleryphotos.DBUtils.adminSQLiteOpenHelper;
+import com.example.galleryphotos.Entity.GalleryEntity;
+import com.example.galleryphotos.Model.GalleryModel;
 import com.example.galleryphotos.databinding.ActivityNavigationBinding;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -20,6 +28,11 @@ public class Navigation extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private ActivityNavigationBinding binding;
+
+    private SQLiteDatabase getConnection() {
+        adminSQLiteOpenHelper admin = new adminSQLiteOpenHelper(this, "gallery", null, 1);
+        return admin.getWritableDatabase();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +63,20 @@ public class Navigation extends FragmentActivity implements OnMapReadyCallback {
         // Add a marker in Sydney and move the camera
         Toast.makeText(Navigation.this, "Lat: " + Ubication.getLat(), Toast.LENGTH_SHORT).show();
 
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        LatLng sydney = new LatLng(Ubication.getLat(), Ubication.getLon());
+        mMap.addMarker(new MarkerOptions().position(sydney).title(Ubication.getAdreess()));
         CameraPosition CameraPosition = new CameraPosition.Builder().target(sydney).zoom(13).build();
         CameraUpdate update = CameraUpdateFactory.newCameraPosition(CameraPosition);
         mMap.moveCamera(update);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    }
+
+    public void BtnSave(View view) {
+        String response = GalleryModel.NewImage(
+                this.getConnection(),
+                new GalleryEntity(null, Ubication.getLon(), Ubication.getLat(),
+                        Ubication.getAdreess(), Ubication.getRegion(), Image.getDescription())
+                );
+        Toast.makeText(Navigation.this, response, Toast.LENGTH_SHORT).show();
     }
 }
