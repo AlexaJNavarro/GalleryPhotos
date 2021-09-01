@@ -16,7 +16,7 @@ public class adminSQLiteOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE gallery(" +
                 "id text primary key, " +
-                "image blob, " +
+                "image text, " +
                 "log real, " +
                 "lat real, " +
                 "address text, " +

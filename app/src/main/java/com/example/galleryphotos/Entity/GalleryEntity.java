@@ -3,10 +3,13 @@ package com.example.galleryphotos.Entity;
 import android.graphics.Bitmap;
 
 public class GalleryEntity {
+
+    private String Id;
+
     public GalleryEntity() {
     }
 
-    public GalleryEntity(Bitmap image, double log, double lat, String address, String region, String description) {
+    public GalleryEntity(String image, double log, double lat, String address, String region, String description) {
         Image = image;
         Log = log;
         Lat = lat;
@@ -23,11 +26,11 @@ public class GalleryEntity {
         Id = id;
     }
 
-    public Bitmap getImage() {
+    public String getImage() {
         return Image;
     }
 
-    public void setImage(Bitmap image) {
+    public void setImage(String image) {
         Image = image;
     }
 
@@ -71,8 +74,7 @@ public class GalleryEntity {
         Description = description;
     }
 
-    private String Id;
-    private Bitmap Image;
+    private String Image;
     private double Log;
     private double Lat;
     private String Address;

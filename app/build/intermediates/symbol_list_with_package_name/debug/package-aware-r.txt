@@ -2117,6 +2117,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_saved
 id immediateStop
 id included
 id info
@@ -2136,6 +2137,7 @@ id lbl_log
 id lbl_log_image
 id lbl_region
 id lbl_region_image
+id lbl_route_image
 id left
 id leftToRight
 id legacy
@@ -2461,6 +2463,7 @@ layout activity_gallery
 layout activity_location
 layout activity_main
 layout activity_navigation
+layout activity_test
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

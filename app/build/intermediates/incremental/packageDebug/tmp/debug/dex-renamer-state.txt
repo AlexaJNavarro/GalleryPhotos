@@ -1,4 +1,4 @@
-#Tue Aug 31 19:34:31 PET 2021
+#Tue Aug 31 21:39:24 PET 2021
 base.0=/home/leo/Documentos/Android/GalleryPhotos/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

@@ -68,6 +68,10 @@
         "source": "/home/leo/Documentos/Android/GalleryPhotos/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/leo/Documentos/Android/GalleryPhotos/app/build/intermediates/res/merged/debug/layout_activity_test.xml.flat",
+        "source": "/home/leo/Documentos/Android/GalleryPhotos/app/src/main/res/layout/activity_test.xml"
+    },
+    {
         "merged": "/home/leo/Documentos/Android/GalleryPhotos/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/home/leo/Documentos/Android/GalleryPhotos/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },

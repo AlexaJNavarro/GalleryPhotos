@@ -19,14 +19,18 @@ public class GalleryModel {
 
         ContentValues row = new ContentValues();
         row.put("id", data.getId());
-        //row.put("image", img);
+        row.put("image", data.getImage());
         row.put("log", data.getLog());
         row.put("lat", data.getLat());
         row.put("address", data.getAddress());
         row.put("region", data.getRegion());
         row.put("description", data.getDescription());
 
-        db.insert("gallery", null, row);
+        try {
+            db.insert("gallery", null, row);
+        } catch (Exception e) {
+            return e.getMessage();
+        }
         db.close();
 
         return "image saved";

@@ -1,56 +1,60 @@
-com/example/galleryphotos/AInterfaces/GET.java
- com.example.galleryphotos.AInterfaces.GET
-com/example/galleryphotos/MapsActivity.java
- com.example.galleryphotos.MapsActivity
- com.example.galleryphotos.MapsActivity$1
+com/example/galleryphotos/Navigation.java
+ com.example.galleryphotos.Navigation
 com/example/galleryphotos/AHelper/Store.java
  com.example.galleryphotos.AHelper.Store
+com/example/galleryphotos/databinding/ActivityTestBinding.java
+ com.example.galleryphotos.databinding.ActivityTestBinding
 com/example/galleryphotos/AInterfaces/LocationNameApi.java
  com.example.galleryphotos.AInterfaces.LocationNameApi
 com/example/galleryphotos/AModels/Data.java
  com.example.galleryphotos.AModels.Data
-com/example/galleryphotos/databinding/ListItemDirectionBinding.java
- com.example.galleryphotos.databinding.ListItemDirectionBinding
-com/example/galleryphotos/DBUtils/adminSQLiteOpenHelper.java
- com.example.galleryphotos.DBUtils.adminSQLiteOpenHelper
+com/example/galleryphotos/Adapter/ListDirectionsAdapter.java
+ com.example.galleryphotos.Adapter.ListDirectionsAdapter
+ com.example.galleryphotos.Adapter.ListDirectionsAdapter$1
+ com.example.galleryphotos.Adapter.ListDirectionsAdapter$DirectionsViewHolder
 com/example/galleryphotos/databinding/ActivityLocationBinding.java
  com.example.galleryphotos.databinding.ActivityLocationBinding
 com/example/galleryphotos/AHelper/Image.java
  com.example.galleryphotos.AHelper.Image
-com/example/galleryphotos/databinding/ActivityNavigationBinding.java
- com.example.galleryphotos.databinding.ActivityNavigationBinding
-com/example/galleryphotos/databinding/ListItemImagesBinding.java
- com.example.galleryphotos.databinding.ListItemImagesBinding
 com/example/galleryphotos/Gallery.java
  com.example.galleryphotos.Gallery
 com/example/galleryphotos/databinding/ActivityMainBinding.java
  com.example.galleryphotos.databinding.ActivityMainBinding
-com/example/galleryphotos/Entity/GalleryEntity.java
- com.example.galleryphotos.Entity.GalleryEntity
+com/example/galleryphotos/AHelper/Ubication.java
+ com.example.galleryphotos.AHelper.Ubication
+com/example/galleryphotos/databinding/ActivityNavigationBinding.java
+ com.example.galleryphotos.databinding.ActivityNavigationBinding
+com/example/galleryphotos/test.java
+ com.example.galleryphotos.test
+com/example/galleryphotos/AHelper/Func.java
+ com.example.galleryphotos.AHelper.Func
+com/example/galleryphotos/AInterfaces/GET.java
+ com.example.galleryphotos.AInterfaces.GET
+com/example/galleryphotos/DBUtils/adminSQLiteOpenHelper.java
+ com.example.galleryphotos.DBUtils.adminSQLiteOpenHelper
+com/example/galleryphotos/Adapter/ListImageAdapter.java
+ com.example.galleryphotos.Adapter.ListImageAdapter
+ com.example.galleryphotos.Adapter.ListImageAdapter$1
+ com.example.galleryphotos.Adapter.ListImageAdapter$DirectionsViewHolder
+com/example/galleryphotos/databinding/ListItemImagesBinding.java
+ com.example.galleryphotos.databinding.ListItemImagesBinding
+com/example/galleryphotos/Model/GalleryModel.java
+ com.example.galleryphotos.Model.GalleryModel
 com/example/galleryphotos/BuildConfig.java
  com.example.galleryphotos.BuildConfig
 com/example/galleryphotos/databinding/ActivityGalleryBinding.java
  com.example.galleryphotos.databinding.ActivityGalleryBinding
 com/example/galleryphotos/AModels/Location.java
  com.example.galleryphotos.AModels.Location
-com/example/galleryphotos/AHelper/Ubication.java
- com.example.galleryphotos.AHelper.Ubication
-com/example/galleryphotos/AHelper/Func.java
- com.example.galleryphotos.AHelper.Func
+com/example/galleryphotos/databinding/ListItemDirectionBinding.java
+ com.example.galleryphotos.databinding.ListItemDirectionBinding
+com/example/galleryphotos/MapsActivity.java
+ com.example.galleryphotos.MapsActivity
+ com.example.galleryphotos.MapsActivity$1
+com/example/galleryphotos/Entity/GalleryEntity.java
+ com.example.galleryphotos.Entity.GalleryEntity
 com/example/galleryphotos/MainActivity.java
  com.example.galleryphotos.MainActivity
  com.example.galleryphotos.MainActivity$1
  com.example.galleryphotos.MainActivity$2
  com.example.galleryphotos.MainActivity$3
-com/example/galleryphotos/Adapter/ListImageAdapter.java
- com.example.galleryphotos.Adapter.ListImageAdapter
- com.example.galleryphotos.Adapter.ListImageAdapter$1
- com.example.galleryphotos.Adapter.ListImageAdapter$DirectionsViewHolder
-com/example/galleryphotos/Navigation.java
- com.example.galleryphotos.Navigation
-com/example/galleryphotos/Model/GalleryModel.java
- com.example.galleryphotos.Model.GalleryModel
-com/example/galleryphotos/Adapter/ListDirectionsAdapter.java
- com.example.galleryphotos.Adapter.ListDirectionsAdapter
- com.example.galleryphotos.Adapter.ListDirectionsAdapter$1
- com.example.galleryphotos.Adapter.ListDirectionsAdapter$DirectionsViewHolder

@@ -52,7 +52,7 @@
 32    </queries>
 33
 34    <application
-34-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:14:5-55:19
+34-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:14:5-56:19
 35        android:allowBackup="true"
 35-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:15:9-35
 36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -69,87 +69,90 @@
 42        android:testOnly="true"
 43        android:theme="@style/Theme.GalleryPhotos" >
 43-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:20:9-51
-44        <activity android:name="com.example.galleryphotos.Gallery" />
-44-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:21:9-54
-44-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:21:19-42
-45        <!--
-46             The API key for Google Maps-based APIs is defined as a string resource.
-47             (See the file "res/values/google_maps_api.xml").
-48             Note that the API key is linked to the encryption key used to sign the APK.
-49             You need a different API key for each encryption key, including the release key that is used to
-50             sign the APK for publishing.
-51             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-52        -->
-53        <meta-data
-53-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:30:9-32:55
-54            android:name="com.google.android.geo.API_KEY"
-54-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:31:13-58
-55            android:value="@string/google_maps_key" />
-55-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:32:13-52
-56
-57        <activity
-57-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:34:9-36:65
-58            android:name="com.example.galleryphotos.Navigation"
-58-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:35:13-39
-59            android:label="@string/title_activity_navigation" />
-59-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:36:13-62
-60        <activity android:name="com.example.galleryphotos.MapsActivity" />
-60-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:37:9-50
-60-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:37:19-47
-61        <activity android:name="com.example.galleryphotos.MainActivity" >
-61-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:38:9-44:20
+44        <activity android:name="com.example.galleryphotos.test" />
+44-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:21:9-51
+44-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:21:19-39
+45        <activity android:name="com.example.galleryphotos.Gallery" />
+45-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:22:9-45
+45-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:22:19-42
+46        <!--
+47             The API key for Google Maps-based APIs is defined as a string resource.
+48             (See the file "res/values/google_maps_api.xml").
+49             Note that the API key is linked to the encryption key used to sign the APK.
+50             You need a different API key for each encryption key, including the release key that is used to
+51             sign the APK for publishing.
+52             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+53        -->
+54        <meta-data
+54-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:31:9-33:55
+55            android:name="com.google.android.geo.API_KEY"
+55-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:32:13-58
+56            android:value="@string/google_maps_key" />
+56-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:33:13-52
+57
+58        <activity
+58-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:35:9-37:65
+59            android:name="com.example.galleryphotos.Navigation"
+59-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:36:13-39
+60            android:label="@string/title_activity_navigation" />
+60-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:37:13-62
+61        <activity android:name="com.example.galleryphotos.MapsActivity" />
+61-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:38:9-50
 61-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:38:19-47
-62            <intent-filter>
-62-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:39:13-43:29
-63                <action android:name="android.intent.action.MAIN" />
-63-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:40:17-69
-63-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:40:25-66
-64
-65                <category android:name="android.intent.category.LAUNCHER" />
-65-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:42:17-77
-65-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:42:27-74
-66            </intent-filter>
-67        </activity>
-68
-69        <provider
-70            android:name="androidx.core.content.FileProvider"
-70-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:47:13-62
-71            android:authorities="com.example.galleryphotos.provider"
-71-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:48:13-60
-72            android:exported="false"
-72-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:49:13-37
-73            android:grantUriPermissions="true" >
-73-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:50:13-47
-74            <meta-data
-74-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:51:13-53:57
-75                android:name="android.support.FILE_PROVIDER_PATHS"
-75-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:52:17-67
-76                android:resource="@xml/provider_path" />
-76-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:53:17-54
-77        </provider>
-78        <!-- Needs to be explicitly declared on P+ -->
-79        <uses-library
-79-->[com.google.android.gms:play-services-maps:17.0.1] /home/leo/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:39:9-41:40
-80            android:name="org.apache.http.legacy"
-80-->[com.google.android.gms:play-services-maps:17.0.1] /home/leo/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:40:13-50
-81            android:required="false" />
-81-->[com.google.android.gms:play-services-maps:17.0.1] /home/leo/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:41:13-37
-82
-83        <activity
-83-->[com.google.android.gms:play-services-base:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-84            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-84-->[com.google.android.gms:play-services-base:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-85            android:exported="false"
-85-->[com.google.android.gms:play-services-base:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-86            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-86-->[com.google.android.gms:play-services-base:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-87
-88        <meta-data
-88-->[com.google.android.gms:play-services-basement:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/3bd47cd0cbc033840efb0f55a32df796/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-89            android:name="com.google.android.gms.version"
-89-->[com.google.android.gms:play-services-basement:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/3bd47cd0cbc033840efb0f55a32df796/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-90            android:value="@integer/google_play_services_version" />
-90-->[com.google.android.gms:play-services-basement:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/3bd47cd0cbc033840efb0f55a32df796/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-91    </application>
-92
-93</manifest>
+62        <activity android:name="com.example.galleryphotos.MainActivity" >
+62-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:39:9-45:20
+62-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:39:19-47
+63            <intent-filter>
+63-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:40:13-44:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:41:17-69
+64-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:41:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:43:17-77
+66-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:43:27-74
+67            </intent-filter>
+68        </activity>
+69
+70        <provider
+71            android:name="androidx.core.content.FileProvider"
+71-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:48:13-62
+72            android:authorities="com.example.galleryphotos.provider"
+72-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:49:13-60
+73            android:exported="false"
+73-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:50:13-37
+74            android:grantUriPermissions="true" >
+74-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:51:13-47
+75            <meta-data
+75-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:52:13-54:57
+76                android:name="android.support.FILE_PROVIDER_PATHS"
+76-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:53:17-67
+77                android:resource="@xml/provider_path" />
+77-->/home/leo/Documentos/Android/GalleryPhotos/app/src/main/AndroidManifest.xml:54:17-54
+78        </provider>
+79        <!-- Needs to be explicitly declared on P+ -->
+80        <uses-library
+80-->[com.google.android.gms:play-services-maps:17.0.1] /home/leo/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:39:9-41:40
+81            android:name="org.apache.http.legacy"
+81-->[com.google.android.gms:play-services-maps:17.0.1] /home/leo/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:40:13-50
+82            android:required="false" />
+82-->[com.google.android.gms:play-services-maps:17.0.1] /home/leo/.gradle/caches/transforms-2/files-2.1/740ec093eda080f27ba7e2d830b6c0c7/play-services-maps-17.0.1/AndroidManifest.xml:41:13-37
+83
+84        <activity
+84-->[com.google.android.gms:play-services-base:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+85            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+85-->[com.google.android.gms:play-services-base:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+86            android:exported="false"
+86-->[com.google.android.gms:play-services-base:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+87            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+87-->[com.google.android.gms:play-services-base:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/16fec408ce938816983d0134c390d125/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+88
+89        <meta-data
+89-->[com.google.android.gms:play-services-basement:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/3bd47cd0cbc033840efb0f55a32df796/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+90            android:name="com.google.android.gms.version"
+90-->[com.google.android.gms:play-services-basement:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/3bd47cd0cbc033840efb0f55a32df796/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+91            android:value="@integer/google_play_services_version" />
+91-->[com.google.android.gms:play-services-basement:17.0.0] /home/leo/.gradle/caches/transforms-2/files-2.1/3bd47cd0cbc033840efb0f55a32df796/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+92    </application>
+93
+94</manifest>

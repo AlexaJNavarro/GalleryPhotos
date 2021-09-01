@@ -1,5 +1,6 @@
 package com.example.galleryphotos;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Environment;
@@ -74,7 +75,7 @@ public class Navigation extends FragmentActivity implements OnMapReadyCallback {
     public void BtnSave(View view) {
         String response = GalleryModel.NewImage(
                 this.getConnection(),
-                new GalleryEntity(null, Ubication.getLon(), Ubication.getLat(),
+                new GalleryEntity(Image.getImage().toString(), Ubication.getLon(), Ubication.getLat(),
                         Ubication.getAdreess(), Ubication.getRegion(), Image.getDescription())
                 );
         Toast.makeText(Navigation.this, response, Toast.LENGTH_SHORT).show();

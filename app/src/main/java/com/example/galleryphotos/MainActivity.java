@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void uploadImage(){
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intent.setType("image/");
         startActivityForResult(intent.createChooser(intent,"Seleccione la Aplicación"),code_selected);
     }
@@ -167,8 +167,8 @@ public class MainActivity extends AppCompatActivity {
             switch (requestCode){
                 case code_selected:
                     Uri upload_path = data.getData();
+                    Image.setImage(upload_path); // save in variable global
                     image.setImageURI(upload_path);
-                    Toast.makeText(MainActivity.this, upload_path.toString(), Toast.LENGTH_SHORT).show();
                     break;
                 case code_take:
                     MediaScannerConnection.scanFile(this, new String[]{path}, null,
@@ -176,8 +176,10 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onScanCompleted(String s, Uri uri) {
                                 Log.i("Ruta de almacenamiento","Path: " + path);
+                                Image.setImage(uri); // save in variable global
                             }
                     });
+
                     Bitmap bitmap = BitmapFactory.decodeFile(path);
                     image.setImageBitmap(bitmap);
                     break;

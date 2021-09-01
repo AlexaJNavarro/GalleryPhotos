@@ -41,6 +41,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.GalleryPhotos" >
+        <activity android:name="com.example.galleryphotos.test" />
         <activity android:name="com.example.galleryphotos.Gallery" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

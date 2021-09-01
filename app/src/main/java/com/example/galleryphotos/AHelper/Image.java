@@ -1,11 +1,9 @@
 package com.example.galleryphotos.AHelper;
 
 import android.graphics.Bitmap;
+import android.net.Uri;
 
 public class Image {
-    public static String Description;
-    public static Bitmap Image;
-
     public static String getDescription() {
         return Description;
     }
@@ -14,11 +12,14 @@ public class Image {
         Description = description;
     }
 
-    public static Bitmap getImage() {
+    public static Uri getImage() {
         return Image;
     }
 
-    public static void setImage(Bitmap image) {
+    public static void setImage(Uri image) {
         Image = image;
     }
+
+    public static String Description;
+    public static Uri Image;
 }
