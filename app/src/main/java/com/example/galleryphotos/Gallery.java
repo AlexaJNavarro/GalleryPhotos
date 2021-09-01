@@ -2,7 +2,6 @@ package com.example.galleryphotos;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -29,6 +28,8 @@ public class Gallery extends FragmentActivity {
         setContentView(R.layout.activity_gallery);
         ge = GalleryModel.GetAll(this.getConnection());
 
+        this.GetAll();
+
     }
 
 
@@ -40,12 +41,7 @@ public class Gallery extends FragmentActivity {
         return admin.getWritableDatabase();
     }
 
-
-
-
-
-
-    public void Read(View view) {
+    public void GetAll() {
         System.out.println("*****************************************************************************");
         listImages = findViewById(R.id.listImages);
         listImages.setLayoutManager(new LinearLayoutManager(Gallery.this));
@@ -54,13 +50,10 @@ public class Gallery extends FragmentActivity {
         System.out.println("*****************************************************************************");
 
         for(int x=0; x<GalleryModel.GetAll(this.getConnection()).size(); x++){
-            System.out.println(GalleryModel.GetAll(this.getConnection()).get(x).getImage());
-            System.out.println(GalleryModel.GetAll(this.getConnection()).get(x).getAddress());
+            System.out.println("IMAGE: " + GalleryModel.GetAll(this.getConnection()).get(x).getImage());
 
         }
-        //ListImageAdapter listAdapter = new ListImageAdapter(GalleryModel.GetAll(this.getConnection()));
-        //listImage.setLayoutManager(new LinearLayoutManager(Gallery.this));
-        //listImage.setAdapter(listAdapter);
+
 
     }
 }

@@ -68,7 +68,7 @@
                 android:id="@+id/btn_cor"
                 android:layout_width="75dp"
                 android:layout_height="31dp"
-
+                android:background="@drawable/btn_result_dir"
                 android:onClick="Test"
                 android:text="Ver"
 

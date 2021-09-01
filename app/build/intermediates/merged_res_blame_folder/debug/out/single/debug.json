@@ -12,6 +12,10 @@
         "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
     },
     {
+        "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/drawable_btn_result_dir.xml.flat",
+        "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/res/drawable/btn_result_dir.xml"
+    },
+    {
         "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },

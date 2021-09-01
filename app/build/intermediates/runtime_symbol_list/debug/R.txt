@@ -1819,6 +1819,7 @@ int drawable btn_radio_off_mtrl 0x7f07005d
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f07005e
 int drawable btn_radio_on_mtrl 0x7f07005f
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070060
+int drawable btn_result_dir 0x7f0700a9
 int drawable common_full_open_on_phone 0x7f070061
 int drawable common_google_signin_btn_icon_dark 0x7f070062
 int drawable common_google_signin_btn_icon_dark_focused 0x7f070063
@@ -1992,10 +1993,10 @@ int id bounceBoth 0x7f080061
 int id bounceEnd 0x7f080062
 int id bounceStart 0x7f080063
 int id btn_cor 0x7f080064
+int id btn_dir 0x7f0801f9
 int id btn_getall 0x7f0801f3
 int id btn_location 0x7f080066
 int id btn_select 0x7f080067
-int id button 0x7f080068
 int id buttonPanel 0x7f080069
 int id cache_measures 0x7f08006a
 int id cancel_button 0x7f08006b
@@ -2118,8 +2119,10 @@ int id ignoreRequest 0x7f0800df
 int id image 0x7f0800e0
 int id image_address 0x7f0801f4
 int id image_description 0x7f0801f5
-int id image_id 0x7f0801f6
+int id image_lat 0x7f0801fa
+int id image_lon 0x7f0801fb
 int id image_photo 0x7f0801f7
+int id image_region 0x7f0801fc
 int id immediateStop 0x7f0800e2
 int id included 0x7f0800e3
 int id info 0x7f0800e4
