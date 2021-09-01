@@ -23,14 +23,14 @@ com/example/galleryphotos/AModels/Location.java
  com.example.galleryphotos.AModels.Location
 com/example/galleryphotos/databinding/ActivityNavigationBinding.java
  com.example.galleryphotos.databinding.ActivityNavigationBinding
+com/example/galleryphotos/Adapter/ListDirectionsAdapter.java
+ com.example.galleryphotos.Adapter.ListDirectionsAdapter
+ com.example.galleryphotos.Adapter.ListDirectionsAdapter$1
+ com.example.galleryphotos.Adapter.ListDirectionsAdapter$DirectionsViewHolder
+com/example/galleryphotos/Navigation.java
+ com.example.galleryphotos.Navigation
 com/example/galleryphotos/MainActivity.java
  com.example.galleryphotos.MainActivity
  com.example.galleryphotos.MainActivity$1
  com.example.galleryphotos.MainActivity$2
  com.example.galleryphotos.MainActivity$3
-com/example/galleryphotos/Navigation.java
- com.example.galleryphotos.Navigation
-com/example/galleryphotos/Adapter/ListDirectionsAdapter.java
- com.example.galleryphotos.Adapter.ListDirectionsAdapter
- com.example.galleryphotos.Adapter.ListDirectionsAdapter$1
- com.example.galleryphotos.Adapter.ListDirectionsAdapter$DirectionsViewHolder
