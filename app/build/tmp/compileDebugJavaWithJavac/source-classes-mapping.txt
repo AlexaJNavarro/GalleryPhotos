@@ -24,6 +24,7 @@ com/example/galleryphotos/AHelper/Ubication.java
  com.example.galleryphotos.AHelper.Ubication
 com/example/galleryphotos/databinding/ActivityNavigationBinding.java
  com.example.galleryphotos.databinding.ActivityNavigationBinding
+<<<<<<< HEAD
 com/example/galleryphotos/test.java
  com.example.galleryphotos.test
 com/example/galleryphotos/AHelper/Func.java
@@ -53,6 +54,14 @@ com/example/galleryphotos/MapsActivity.java
  com.example.galleryphotos.MapsActivity$1
 com/example/galleryphotos/Entity/GalleryEntity.java
  com.example.galleryphotos.Entity.GalleryEntity
+=======
+com/example/galleryphotos/Adapter/ListDirectionsAdapter.java
+ com.example.galleryphotos.Adapter.ListDirectionsAdapter
+ com.example.galleryphotos.Adapter.ListDirectionsAdapter$1
+ com.example.galleryphotos.Adapter.ListDirectionsAdapter$DirectionsViewHolder
+com/example/galleryphotos/Navigation.java
+ com.example.galleryphotos.Navigation
+>>>>>>> alexa
 com/example/galleryphotos/MainActivity.java
  com.example.galleryphotos.MainActivity
  com.example.galleryphotos.MainActivity$1

@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
             }else{
                 btnSelect.setEnabled(false);
         }
+
+
     }
 
     private boolean validate_permissions() {
@@ -144,7 +146,6 @@ public class MainActivity extends AppCompatActivity {
         String name_image = "";
 
             if(isCreated == false){
-                //Toast.makeText(MainActivity.this, "FALSE", Toast.LENGTH_SHORT).show();
                 isCreated = file_image.mkdirs();
             }else{
                 //Toast.makeText(MainActivity.this, "TRUE", Toast.LENGTH_SHORT).show();
@@ -169,6 +170,7 @@ public class MainActivity extends AppCompatActivity {
                     Uri upload_path = data.getData();
                     Image.setImage(upload_path); // save in variable global
                     image.setImageURI(upload_path);
+                    Toast.makeText(MainActivity.this, data.getData().toString() , Toast.LENGTH_SHORT).show();
                     break;
                 case code_take:
                     MediaScannerConnection.scanFile(this, new String[]{path}, null,
