@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
@@ -28,7 +27,6 @@ import androidx.core.content.FileProvider;
 import com.example.galleryphotos.AHelper.Image;
 
 import java.io.File;
-import java.net.URI;
 
 import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
@@ -170,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
                     Uri upload_path = data.getData();
                     Image.setImage(upload_path); // save in variable global
                     image.setImageURI(upload_path);
-                    Toast.makeText(MainActivity.this, data.getData().toString() , Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this, data.getData().toString() , Toast.LENGTH_SHORT).show();
                     break;
                 case code_take:
                     MediaScannerConnection.scanFile(this, new String[]{path}, null,

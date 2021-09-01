@@ -1,15 +1,12 @@
 package com.example.galleryphotos;
 
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.View;
 import android.widget.Toast;
 
 import androidx.fragment.app.FragmentActivity;
 
-import com.example.galleryphotos.AHelper.Func;
 import com.example.galleryphotos.AHelper.Image;
 import com.example.galleryphotos.AHelper.Ubication;
 import com.example.galleryphotos.DBUtils.adminSQLiteOpenHelper;
@@ -62,7 +59,7 @@ public class Navigation extends FragmentActivity implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        Toast.makeText(Navigation.this, "Lat: " + Ubication.getLat(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(Navigation.this, "Lat: " + Ubication.getLat(), Toast.LENGTH_SHORT).show();
 
         LatLng sydney = new LatLng(Ubication.getLat(), Ubication.getLon());
         mMap.addMarker(new MarkerOptions().position(sydney).title(Ubication.getAdreess()));

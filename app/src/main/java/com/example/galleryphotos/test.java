@@ -1,12 +1,14 @@
 package com.example.galleryphotos;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.view.View;
 import android.widget.TextView;
 
-import com.example.galleryphotos.AHelper.Image;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.galleryphotos.DBUtils.adminSQLiteOpenHelper;
+import com.example.galleryphotos.Model.GalleryModel;
 
 public class test extends AppCompatActivity {
 
@@ -15,10 +17,31 @@ public class test extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        ImageView img = findViewById(R.id.image_saved);
-        img.setImageURI(Image.getImage());
-
-        TextView lbl = findViewById(R.id.lbl_route_image);
-        lbl.setText(Image.getImage().toString());
     }
+
+    public  void get(View view){
+        TextView lbl = findViewById(R.id.lbl_route_image);
+
+        System.out.println("****************************************************************************************************");
+        System.out.println("****************************************************************************************************");
+        System.out.println("****************************************************************************************************");
+        System.out.println("****************************************************************************************************");
+        System.out.println("****************************************************************************************************");
+        for(int x=0; x<GalleryModel.GetAll(this.getConnection()).size(); x++){
+            System.out.println(GalleryModel.GetAll(this.getConnection()).get(x).getImage());
+            System.out.println(GalleryModel.GetAll(this.getConnection()).get(x).getAddress());
+
+        }
+
+        lbl.setText(GalleryModel.GetAll(this.getConnection()).toString());
+        System.out.println("CONEXION: " + this.getConnection().toString());
+        System.out.println("Tamaño: " + GalleryModel.GetAll(this.getConnection()).size());
+    }
+
+    private SQLiteDatabase getConnection() {
+        adminSQLiteOpenHelper admin = new adminSQLiteOpenHelper(this, "gallery", null, 1);
+        return admin.getWritableDatabase();
+    }
+
+
 }

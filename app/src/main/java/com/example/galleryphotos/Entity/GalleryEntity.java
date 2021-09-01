@@ -1,10 +1,9 @@
 package com.example.galleryphotos.Entity;
 
-import android.graphics.Bitmap;
-
 public class GalleryEntity {
 
     private String Id;
+
 
     public GalleryEntity() {
     }

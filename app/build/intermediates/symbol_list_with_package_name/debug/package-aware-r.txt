@@ -1994,6 +1994,7 @@ id bounceEnd
 id bounceStart
 id btn_cor
 id btn_cor_image
+id btn_getall
 id btn_location
 id btn_select
 id button
@@ -2117,7 +2118,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id image_saved
 id immediateStop
 id included
 id info

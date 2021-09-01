@@ -3,12 +3,10 @@ package com.example.galleryphotos.Model;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Bitmap;
 
 import com.example.galleryphotos.Entity.GalleryEntity;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
 import java.util.UUID;
 
 public class GalleryModel {
@@ -36,15 +34,31 @@ public class GalleryModel {
         return "image saved";
     }
 
-    public static GalleryEntity GetAll(SQLiteDatabase db) {
-        GalleryEntity data = new GalleryEntity();
+    public static ArrayList<GalleryEntity> GetAll(SQLiteDatabase db) {
+        //GalleryEntity data = new GalleryEntity();
+        ArrayList<GalleryEntity> data = new ArrayList<>();
 
-        Cursor cursor = db.rawQuery(QUERY_GET_ALL, null);
-        if(cursor.moveToFirst()) {
-            do {
-                data.setId(cursor.getString(0));
-            }while (cursor.moveToFirst());
+        String selectQuery = "SELECT id, image, log, lat, address, region, description FROM gallery";
+
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if(cursor.moveToFirst()){
+            do{
+                GalleryEntity galleryEntity = new GalleryEntity(
+                        cursor.getString(1),
+                        cursor.getDouble(2),
+                        cursor.getDouble(3),
+                        cursor.getString(4),
+                        cursor.getString(5),
+                        cursor.getString(6)
+                );
+                galleryEntity.setId(cursor.getString(0));
+                data.add(galleryEntity);
+            }while (cursor.moveToNext());
+
         }
+
         return data;
     }
+
 }
