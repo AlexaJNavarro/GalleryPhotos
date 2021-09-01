@@ -12,12 +12,12 @@
         "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
-    },
-    {
         "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
         "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/drawable-xhdpi_undraw_polaroid_gg6n.png.flat",
@@ -92,6 +92,10 @@
         "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/layout_list_item_image.xml.flat",
+        "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/res/layout/list_item_image.xml"
+    },
+    {
         "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
@@ -130,10 +134,6 @@
     {
         "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/layout_activity_navigation.xml.flat",
         "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/res/layout/activity_navigation.xml"
-    },
-    {
-        "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/layout_list_item_images.xml.flat",
-        "source": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/src/main/res/layout/list_item_images.xml"
     },
     {
         "merged": "/home/alexa/AndroidStudioProjects/GalleryPhotos/app/build/intermediates/res/merged/debug/drawable_botton_select.xml.flat",

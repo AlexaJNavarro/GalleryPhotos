@@ -1993,7 +1993,6 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btn_cor
-id btn_cor_image
 id btn_getall
 id btn_location
 id btn_select
@@ -2118,6 +2117,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_address
+id image_description
+id image_id
+id image_photo
 id immediateStop
 id included
 id info
@@ -2130,13 +2133,9 @@ id jumpToStart
 id labeled
 id layout
 id lbl_direction
-id lbl_direction_image
 id lbl_lat
-id lbl_lat_image
 id lbl_log
-id lbl_log_image
 id lbl_region
-id lbl_region_image
 id lbl_route_image
 id left
 id leftToRight
@@ -2481,7 +2480,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout list_item_direction
-layout list_item_images
+layout list_item_image
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.galleryphotos.Adapter.ListImageAdapter;
 import com.example.galleryphotos.DBUtils.adminSQLiteOpenHelper;
 import com.example.galleryphotos.Entity.GalleryEntity;
 import com.example.galleryphotos.Model.GalleryModel;
@@ -15,8 +16,12 @@ import com.example.galleryphotos.Model.GalleryModel;
 import java.util.ArrayList;
 
 public class Gallery extends FragmentActivity {
-    RecyclerView listImage;
+
     ArrayList<GalleryEntity> ge;
+    RecyclerView listImages;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,17 +31,26 @@ public class Gallery extends FragmentActivity {
 
     }
 
+
+
+
+
     private SQLiteDatabase getConnection() {
         adminSQLiteOpenHelper admin = new adminSQLiteOpenHelper(this, "gallery", null, 1);
         return admin.getWritableDatabase();
     }
 
+
+
+
+
+
     public void Read(View view) {
         System.out.println("*****************************************************************************");
-        listImage = findViewById(R.id.listImages);
-        listImage.setLayoutManager(new LinearLayoutManager(Gallery.this));
+        listImages = findViewById(R.id.listImages);
+        listImages.setLayoutManager(new LinearLayoutManager(Gallery.this));
         ListImageAdapter adapter = new ListImageAdapter(ge);
-        listImage.setAdapter(adapter);
+        listImages.setAdapter(adapter);
         System.out.println("*****************************************************************************");
 
         for(int x=0; x<GalleryModel.GetAll(this.getConnection()).size(); x++){
