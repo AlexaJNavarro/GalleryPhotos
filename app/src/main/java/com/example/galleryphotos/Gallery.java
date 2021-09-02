@@ -19,9 +19,6 @@ public class Gallery extends FragmentActivity {
     ArrayList<GalleryEntity> ge;
     RecyclerView listImages;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,12 +26,7 @@ public class Gallery extends FragmentActivity {
         ge = GalleryModel.GetAll(this.getConnection());
 
         this.GetAll();
-
     }
-
-
-
-
 
     private SQLiteDatabase getConnection() {
         adminSQLiteOpenHelper admin = new adminSQLiteOpenHelper(this, "gallery", null, 1);
@@ -42,18 +34,9 @@ public class Gallery extends FragmentActivity {
     }
 
     public void GetAll() {
-        System.out.println("*****************************************************************************");
         listImages = findViewById(R.id.listImages);
         listImages.setLayoutManager(new LinearLayoutManager(Gallery.this));
         ListImageAdapter adapter = new ListImageAdapter(ge);
         listImages.setAdapter(adapter);
-        System.out.println("*****************************************************************************");
-
-        for(int x=0; x<GalleryModel.GetAll(this.getConnection()).size(); x++){
-            System.out.println("IMAGE: " + GalleryModel.GetAll(this.getConnection()).get(x).getImage());
-
-        }
-
-
     }
 }

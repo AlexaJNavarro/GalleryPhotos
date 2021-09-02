@@ -16,12 +16,12 @@
 
             <LinearLayout
                 android:layout_width="152dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="125dp"
+                    android:layout_height="14dp"
                     android:orientation="vertical"></LinearLayout>
 
                 <TextView
@@ -58,11 +58,10 @@
                     android:id="@+id/btn_dir"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/btn_result_dir"
-                    android:text="Ver Dirección"
-                    android:layout_marginRight="20dp"
                     android:layout_marginTop="10dp"
-                    />
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_result_dir"
+                    android:text="Ver Dirección" />
 
             </LinearLayout>
 
@@ -74,7 +73,7 @@
                 <ImageView
                     android:id="@+id/image_photo"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     app:srcCompat="@drawable/image_no_disp" />
 
             </LinearLayout>

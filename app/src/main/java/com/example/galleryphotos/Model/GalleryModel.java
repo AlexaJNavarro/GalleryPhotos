@@ -55,7 +55,6 @@ public class GalleryModel {
                 galleryEntity.setId(cursor.getString(0));
                 data.add(galleryEntity);
             }while (cursor.moveToNext());
-
         }
 
         return data;

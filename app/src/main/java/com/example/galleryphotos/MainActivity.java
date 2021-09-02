@@ -33,7 +33,7 @@ import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 public class MainActivity extends AppCompatActivity {
 
-        ImageView image;
+    ImageView image;
     private final String file = "myImagesTest/";
     private final String route_image = file + "myPictures";
     String path = "";

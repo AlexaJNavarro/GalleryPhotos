@@ -17,12 +17,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginRight="10dp"
         android:clickable="true"
         android:onClick="BtnRedirectGallery"
         app:rippleColor="#673AB7"
         app:srcCompat="@drawable/botton_select"
-        android:src="@android:drawable/ic_menu_add"
+        android:src="@android:drawable/ic_menu_view"
         app:tint="@android:color/white"
         />
 
